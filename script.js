@@ -23,8 +23,9 @@ else if (isNaN) {
   }
 }
 
-let iterable  = [firstNumber, secondNumber];
-iterable.reverse();
+let iterable = [firstNumber, secondNumber];
+iterable.sort((firstNumber, secondNumber) => firstNumber - secondNumber);
+
 console.log(iterable);
 
 console.log(firstNumber);
